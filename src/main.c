@@ -22,7 +22,7 @@ int main ()
 		printf ("%.2f",x);
 		return 0;
 	}
-	D = Discriminant(a,b,c);
+	D = Discriment(a,b,c);
 	i = Proverka(D);
 	switch (i) {
 		case 0:
