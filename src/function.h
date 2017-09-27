@@ -1,7 +1,7 @@
 #ifndef OTHERFUNC_H
 #define OTHERFUNC_H
 
-float Discriminant(float a,float b,float c);
+float Discriment(float a,float b,float c);
 
 int Proverka(float D);
 
