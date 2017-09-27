@@ -14,7 +14,7 @@ int main ()
 	printf("c = ");
 	scanf("%f",&c);
 	if ( (a == 0) && (b == 0)) {
-		printf("Net kornei");
+		printf("Has no roots");
 		return 0;
 	}
 	if (a == 0) {
@@ -30,7 +30,7 @@ int main ()
 			printf ("%.2f",x);
 			break;
 		case 1:
-			printf("Net kornei");
+			printf("Has no roots");
 			break;
 		case 2:
 			x = Znachenie (D, a, b, c, 1);
