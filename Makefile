@@ -11,3 +11,7 @@ build/main.o: src/main.c src/procedure.h
 
 build/procedure.o: src/procedure.c src/procedure.h 
 	gcc $(CFLAGS) -c src/procedure.c -o build/procedure.o -lm
+
+test: 
+	make bin/equation_test.exe 
+	bin/equation_test.exe 
