@@ -2,55 +2,55 @@
 #include <../src/function.h>
 
 // checking
-CTEST(Test_1_checking, input_1)
+CTEST(Test_1_proverka, input_1)
 {
-    int result = checking(1);
+    int result = Proverka(1);
 	
     int expected = 2;
 	
     ASSERT_EQUAL(expected, result);
 }
 
-CTEST(Test_2_checking, input_m_1)
+CTEST(Test_2_proverka, input_m_1)
 {
-    int result = checking(-1);
+    int result = Proverka(-1);
 	
     int expected = 1;
 	
     ASSERT_EQUAL(expected, result);
 }
 
-CTEST(Test_3_checking, input_0)
+CTEST(Test_3_proverka, input_0)
 {
-    int result = checking(0);
+    int result = Proverka(0);
 	
     int expected = 0;
 	
     ASSERT_EQUAL(expected, result);
 }
 
-// Discriminant
-CTEST(Test_1_discriminant, input_3_2_1)
+// Discriment
+CTEST(Test_1_discriment, input_3_2_1)
 {
-    float result = Discriminant(3,2,1);
+    float result = Discriment(3,2,1);
 	
     float expected = -8;
 	
     ASSERT_DBL_NEAR(expected, result);
 }
 
-CTEST(Test_2_discriminant, input_1_3_2)
+CTEST(Test_2_discriment, input_1_3_2)
 {
-    float result = Discriminant(1,3,2);
+    float result = Discriment(1,3,2);
 	
     float expected = 1;
 	
    ASSERT_DBL_NEAR(expected, result);
 }
 
-CTEST(Test_3_discriminant, input_4_4_1)
+CTEST(Test_3_discriment, input_4_4_1)
 {
-    float result = Discriminant(4,4,1);
+    float result = Discriment(4,4,1);
 	
     float expected = 0;
 	
