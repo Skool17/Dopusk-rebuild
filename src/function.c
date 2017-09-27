@@ -1,4 +1,4 @@
-#include "procedure.h"
+#include "function.h"
 #include <math.h>
 
 int Proverka(float D)
