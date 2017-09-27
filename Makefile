@@ -24,3 +24,12 @@ build/test/main.o: test/main.c src/procedure.h
 
 build/test/function_test.o: src/procedure.h test/function_test.c
 	@gcc $(CFlAGS) -I thirdparty -c test/function_test.c -o build/test/function_test.o  -lm 
+
+clean:
+	@echo "Cleaning files in build directory" 	
+	@rm -rf build/*.d build/*.o 
+	@rm -rf build/test/*.d build/test/*.o
+	@echo "Cleaning binaries"
+	@rm -rf bin/equation.exe 
+	@rm -rf bin/equation_test.exe 
+	@echo "All files have been cleaned."	
