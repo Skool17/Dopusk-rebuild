@@ -1,5 +1,5 @@
 #include <ctest.h>
-#include <../src/procedure.h>
+#include <../src/function.h>
 
 // checking
 CTEST(Test_1_checking, input_1)
